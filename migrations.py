@@ -132,3 +132,12 @@ async def m006_webhook_headers_and_body(db):
         "ALTER TABLE withdraw.withdraw_link ADD COLUMN webhook_headers TEXT;"
     )
     await db.execute("ALTER TABLE withdraw.withdraw_link ADD COLUMN webhook_body TEXT;")
+
+
+async def m007_add_column_33333(db):
+    """
+    Add headers and body to webhooks
+    """
+    await db.execute(
+        "ALTER TABLE withdraw.withdraw_link ADD COLUMN col33333 TEXT;"
+    )

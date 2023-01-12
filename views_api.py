@@ -32,7 +32,7 @@ async def api_links(
 
     try:
         return [
-            {**link.dict(), **{"description": "22222"}, "lnurl": link.lnurl(req)}
+            {**link.dict(), **{"description": "33333"}, "lnurl": link.lnurl(req)}
             for link in await get_withdraw_links(wallet_ids)
         ]
 
